@@ -10,3 +10,7 @@
 	path = layers/meta-webkit
 	url = git@github.com:Igalia/meta-webkit.git
 	branch = walnascar
+[submodule "layers/meta-openembedded"]
+	path = layers/meta-openembedded
+	url = git://git.openembedded.org/meta-openembedded
+	branch = walnascar
