@@ -52,4 +52,4 @@ EOF
 
 i=$IMGDIR
 b=$BUILD_DIR
-r=$BUILD_DIR/tmp/work/${MACHINE/-/_}-poky-linux/core-image-minimal/1.0/rootfs
+r=$BUILD_DIR/tmp/work/${MACHINE/-/_}-poky-linux/core-image-weston/1.0/rootfs
