@@ -46,6 +46,8 @@ IMAGE_FEATURES:append = " ssh-server-dropbear hwcodecs"
 PREFERRED_PROVIDER_virtual/wpebackend = "wpebackend-fdo"
 IMAGE_INSTALL:append = " wpewebkit cog"
 LICENSE_FLAGS_ACCEPTED += "synaptics-killswitch"
+## font
+IMAGE_INSTALL:append = " source-han-sans-jp-fonts"
 EOF
 
 i=$IMGDIR
