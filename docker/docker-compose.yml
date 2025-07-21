@@ -5,8 +5,7 @@ services:
     tty: true
     user: ubuntu
     volumes:
-      - ../layers/:/home/ubuntu/shared/layers:ro
-      - ../scripts/:/home/ubuntu/shared/scripts:ro
+      - ..:/home/ubuntu/shared
     working_dir: /home/ubuntu/shared
     environment:
       - TZ=Asia/Tokyo

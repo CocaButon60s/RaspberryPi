@@ -1,0 +1,39 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "ssh-keygen",
+      "type": "shell",
+      "command": "ssh-keygen -t rsa -b 4096",
+      "hide": true
+    },
+    {
+      "label": "ssh-copy-id",
+      "type": "shell",
+      "command": "ssh-copy-id -i ~/.ssh/id_rsa.pub ikuno@192.168.1.2",
+      "hide": true
+    },
+    {
+      "label": "copy image",
+      "type": "shell",
+      "command": "scp",
+      "args": [
+        "/home/cocabuton/work/RaspberryPi/pi-build/tmp/deploy/images/raspberrypi3-64/core-image-weston-raspberrypi3-64.rootfs.wic.bz2",
+        "/home/cocabuton/work/RaspberryPi/pi-build/tmp/deploy/images/raspberrypi3-64/core-image-weston-raspberrypi3-64.rootfs.wic.bmap",
+        "ikuno@192.168.1.2:/home/ikuno/work/share"
+      ],
+      "hide": true
+    },
+    {
+      "label": "bmaptool",
+      "type": "shell",
+      "command": "ssh -t ikuno@192.168.1.2 'sudo bmaptool copy /home/ikuno/work/share/core-image-weston-raspberrypi3-64.rootfs.wic.bz2 /dev/sdb'",
+      "presentation": {
+        "focus": true
+      },
+      "dependsOn": "copy image"
+    }
+  ]
+}

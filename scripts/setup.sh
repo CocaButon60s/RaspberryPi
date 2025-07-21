@@ -2,7 +2,7 @@
 
 WORKSPACE=~/shared
 
-BUILD_DIR=~/pi-build
+BUILD_DIR=$WORKSPACE/pi-build
 LAYERS_DIR=$WORKSPACE/layers
 
 BBLAYERS_CONF=$BUILD_DIR/conf/bblayers.conf
