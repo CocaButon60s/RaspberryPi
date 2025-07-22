@@ -25,6 +25,7 @@ bitbake-layers add-layer \
   $LAYERS_DIR/meta-openembedded/meta-python \
   $LAYERS_DIR/meta-openembedded/meta-multimedia \
   $LAYERS_DIR/meta-raspberrypi \
+  $LAYERS_DIR/meta-customize \
 
 cat <<EOF >> $LOCAL_CONF
 
