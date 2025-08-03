@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WORKSPACE=~/shared
+WORKSPACE=/workspaces/RaspberryPi
 
 BUILD_DIR=$WORKSPACE/pi-build
 LAYERS_DIR=$WORKSPACE/layers

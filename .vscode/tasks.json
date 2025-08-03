@@ -20,10 +20,13 @@
       "type": "shell",
       "command": "scp",
       "args": [
-        "/home/cocabuton/work/RaspberryPi/pi-build/tmp/deploy/images/raspberrypi3-64/core-image-weston-raspberrypi3-64.rootfs.wic.bz2",
-        "/home/cocabuton/work/RaspberryPi/pi-build/tmp/deploy/images/raspberrypi3-64/core-image-weston-raspberrypi3-64.rootfs.wic.bmap",
+        "core-image-weston-raspberrypi3-64.rootfs.wic.bz2",
+        "core-image-weston-raspberrypi3-64.rootfs.wic.bmap",
         "ikuno@192.168.1.2:/home/ikuno/work/share"
       ],
+      "options": {
+        "cwd": "${workspaceFolder}/pi-build/tmp/deploy/images/raspberrypi3-64"
+      },
       "hide": true
     },
     {
