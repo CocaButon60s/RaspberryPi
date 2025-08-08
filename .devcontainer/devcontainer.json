@@ -16,7 +16,11 @@
           "editor.tabSize": 2
         }
       },
-      "extensions": ["esbenp.prettier-vscode"]
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "mesonbuild.mesonbuild",
+        "ms-vscode.cpptools"
+      ]
     }
   },
   "mounts": [],
